@@ -1,0 +1,26 @@
+.divs {
+    height: 10em;
+    background-color: white;
+    color: black;
+    width: 20em;
+    border-radius: 1em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition:ease-out;
+}
+
+.card_container{
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.divs:hover {
+    background-color: #bbbbbb;
+    transform: scale(1.5px, 1s);
+}
