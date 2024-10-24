@@ -29,8 +29,8 @@ function Form() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    try {
-      const response = await fetch("http://142.93.254.119/api/users", {
+    try { 
+      const response = await fetch(import.meta.env.VITE_API_REQUEST, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

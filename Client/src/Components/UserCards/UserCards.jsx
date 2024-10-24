@@ -8,7 +8,7 @@ function UserCards() {
 
   const fetchApi = async () => {
     //Con axios, permite realizar una request a la API con su respectivo link de forma asíncrona
-    const response = await axios.get("http://142.93.254.119/api/users");
+    const response = await axios.get(import.meta.env.VITE_API_REQUEST);
     if (Array.isArray(response.data)) {
       setUsers(response.data);
     }
