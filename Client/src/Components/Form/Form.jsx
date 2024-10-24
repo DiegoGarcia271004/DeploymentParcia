@@ -30,7 +30,7 @@ function Form() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:8080/api/users", {
+      const response = await fetch("http://142.93.254.119/api/users", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
